@@ -1,0 +1,85 @@
+/src
+├── /components        # Reusable UI components
+│   ├── Header.js
+│   ├── Footer.js
+│   ├── ProductCard.js
+│   ├── Button.js
+│   ├── Loader.js       # Loading spinner
+│   ├── Rating.js       # Star rating component
+│   ├── SearchBar.js    # Search functionality
+│   ├── Pagination.js   # Pagination for products
+│   ├── ProtectedRoute.js  # Route protection for authenticated users
+│
+├── /pages             # Main pages
+│   ├── Home.js
+│   ├── ProductDetail.js
+│   ├── Cart.js
+│   ├── Checkout.js     # Checkout & Payment Page
+│   ├── Orders.js       # User Order History
+│   ├── Login.js
+│   ├── Register.js
+│
+├── /users             # User-specific pages
+│   ├── Profile.js      # User Profile Page
+│   ├── Wishlist.js     # User Wishlist Page
+│   ├── AddressBook.js  # Manage addresses
+│   ├── OrderDetails.js # View individual order details
+│
+├── /admin             # Admin Panel Pages
+│   ├── AdminDashboard.js  # Admin Home Page
+│   ├── ManageProducts.js  # CRUD Operations for Products
+│   ├── ManageUsers.js     # Manage Users
+│   ├── ManageOrders.js    # Handle Orders
+│   ├── ManagePayments.js  # Monitor transactions
+│
+├── /store             # Global state management (Redux Toolkit)
+│   ├── store.js        # Configures Redux store
+│   ├── authSlice.js    # Authentication state
+│   ├── cartSlice.js    # Cart state
+│   ├── productSlice.js # Products state
+│   ├── orderSlice.js   # Orders state
+│   ├── wishlistSlice.js # Wishlist state
+│
+├── /services          # API service layer (Axios requests)
+│   ├── authService.js     # Login/Register API calls
+│   ├── productService.js  # Fetch products API
+│   ├── orderService.js    # Order-related API
+│   ├── paymentService.js  # Payment gateway API
+│   ├── wishlistService.js # Wishlist API
+│   ├── userService.js     # User profile & settings API
+│
+├── /api              # Separate folder for API calls
+│   ├── authAPI.js        # Auth API routes
+│   ├── productAPI.js     # Product API routes
+│   ├── orderAPI.js       # Order API routes
+│   ├── paymentAPI.js     # Payment API routes
+│   ├── wishlistAPI.js    # Wishlist API routes
+│   ├── userAPI.js        # User-related API routes
+│
+├── /hooks             # Custom React Hooks
+│   ├── useAuth.js       # Auth Hook for user authentication
+│   ├── useCart.js       # Cart Hook for handling cart actions
+│   ├── useOrders.js     # Orders Hook for fetching user orders
+│   ├── useWishlist.js   # Wishlist Hook for handling wishlist
+│
+├── /middlewares       # Frontend Middleware (Optional)
+│   ├── PrivateRoute.js    # Protect user pages (Auth Required)
+│   ├── AdminRoute.js      # Protect admin pages (Admin Only)
+│
+├── /utils             # Utility functions
+│   ├── formatPrice.js    # Format currency
+│   ├── validators.js     # Form validation functions
+│   ├── toastAlerts.js    # Success/Error messages
+│   ├── calculateTotal.js # Calculate cart totals
+│   ├── localStorage.js   # Local storage helper functions
+│
+├── /assets            # Static files (images, icons, styles)
+│   ├── /images        # Product images, logos
+│   ├── /styles        # Global CSS styles
+│
+├── /config            # Configurations (API keys, env variables)
+│   ├── constants.js   # API base URLs, default values
+│
+├── App.js             # Main app component
+├── index.js           # Entry point
+└── routes.js          # Centralized route management
